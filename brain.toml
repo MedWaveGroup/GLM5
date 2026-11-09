@@ -1,0 +1,22 @@
+# Ollama hosts in priority order. Loopback only — no tunnels, no public URLs.
+# Each machine runs its own daemon on 127.0.0.1:11434.
+# On Davide's Mac the first profile matches (M3, 24 GB, qwen2.5:7b).
+# On the Linux box that model is absent, so the pool falls through to qwen2.5:3b.
+
+[[hosts]]
+name = "davide-mac"
+url = "http://127.0.0.1:11434"
+model = "qwen2.5:7b"
+hardware = "M3, 24 GB"
+
+[[hosts]]
+name = "linux-box"
+url = "http://127.0.0.1:11434"
+model = "qwen2.5:3b"
+hardware = "Linux box"
+
+[ollama]
+embed_model = "nomic-embed-text"
+health_timeout_s = 1.5
+generate_timeout_s = 90
+num_predict = 280

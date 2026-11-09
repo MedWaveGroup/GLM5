@@ -1,0 +1,496 @@
+{
+ "created": "2026-11-09",
+ "purpose": "One-time export of MedWave bot-fleet learnings (approved by Davide Duranti, 9 Nov 2026).",
+ "sources_read": {
+  "agent_folders": {
+   "path": "/home/box/agent-data/agents/<id>/",
+   "count": 31,
+   "read": "profile.json, settings.json, store.db kv keys (local, no tokens). store.db transcript tables were empty; asset/attachment files listed by name only.",
+   "ids": {
+    "0255ea66-ec09-464f-96d4-a8d78653d3b6": "Installations & Referrals",
+    "08b5fd26-928c-4c47-8e91-176258495a50": "Communication bot",
+    "0968e26e-e838-45d4-9472-2455efa3c187": "Brochure Bot",
+    "189da52e-5641-4f83-accc-c8a4ad5668f1": "Master Control",
+    "18cf206f-08c2-4fb6-a484-bf0e70f818a6": "Radar",
+    "1e97d809-2f60-492f-965b-166f757dda49": "Sales Desk",
+    "24e6afc0-819c-4e64-a69c-24f5cbff4ac4": "LEADS: Objection bot",
+    "25007f12-0bce-4318-bc0f-ddb01332ede1": "LEADS: Wording Lab",
+    "28cb811f-5f0f-4a88-befc-d470f904732a": "Outreach bot",
+    "2a21b093-9049-43c7-a9da-15327fae4b3c": "Quality Assurance",
+    "353f6cf8-1eac-40da-a2d5-a1cb8d299a34": "Video Creation bot",
+    "37b88cb4-da74-4f14-8bee-4c1a2c2e4c08": "Reporting Bot",
+    "381a4c3c-f7b4-45ba-abe1-9bbeaabb9326": "Sales Radar",
+    "3a33d40d-1941-4e12-9017-50fb7640a076": "Mentor",
+    "43b11883-f163-4f18-9dad-709920747f47": "Deposits & Finance",
+    "49df5bea-8da2-41f1-9730-7465a3a3cddd": "Vector bot",
+    "4bf3f031-6de4-44fa-a6c7-a7dcfbd4b542": "LEADS: Context bot",
+    "5cc75c2e-53ea-4348-8bf1-3b73af367d26": "Content bot",
+    "5fe53a22-e7ee-4573-8d56-a8147c6ffa24": "Give Give Give Take Bot",
+    "652a33e0-35b2-421b-bbb7-62e49f54e9ff": "LEADS: Outreach Control",
+    "758f74ee-1c16-405f-beae-3c837876ac5f": "Inbox Manager",
+    "8049cbfc-9a7c-43f5-8143-b5f46840a12c": "Messaging Performance",
+    "9d0eae0f-d5c6-47e7-8348-6aba49f12480": "LEADS: Outreach Bot",
+    "a0a59db3-5b08-4ea4-9a97-4483e3fb9bcf": "Legal bot",
+    "a6eb18b1-94fc-4009-b172-79d1087748aa": "Meta Ad Account Performance",
+    "b49be58d-3f1f-4475-8b70-86abfeb775dc": "Social Media bot",
+    "b8fed67d-0691-4286-a1f5-60add292a1a2": "People \u00b7 People Memory",
+    "ba891246-c4dc-4f07-ba66-6ff33b39c74a": "Smartbot",
+    "ccb4f6bb-9f67-437b-9015-546a009ca940": "Offer Engine",
+    "d70f0ac4-4f70-41cf-a05a-fc318a479156": "Website Builder",
+    "e6d90d66-0248-4d77-95ba-74d49cb2ca98": "Grok Bot"
+   }
+  },
+  "user_skills": {
+   "path": "/home/box/agent-data/workflows/*/SKILL.md",
+   "found": [
+    "edit-videos-with-claude (video editing, no MedWave rules; not ingested)"
+   ]
+  },
+  "master_control_memory": {
+   "tool": "RecallMemory",
+   "queries": [
+    "davide-ruled-rules-decision",
+    "leads-booking-closer-walkthrough",
+    "hq-targets-kpi",
+    "team-setters-closers-slack",
+    "channels-wa-hl-email",
+    "pricing-products",
+    "buyer-approval-send",
+    "bots-reports-routine",
+    "elmien-slack",
+    "erich-unowned-owners",
+    "us-email-stripe",
+    "andries-calendar",
+    "team-roles",
+    "travel-events",
+    "kill-stop-pause",
+    "deposits-installs",
+    "meta-ads",
+    "style-wording",
+    "partners-b2b",
+    "patient-clinician",
+    "hq-walkthrough"
+   ],
+   "facts_searched_per_query": 504,
+   "note": "Each result is capped at ~12-27 facts shown, so coverage of the 504 facts is partial."
+  },
+  "bot_transcripts": {
+   "tool": "SearchTranscripts",
+   "bots_searched": 32,
+   "note": "One ranked snippet search per bot (~300-char snippets, undated); Outreach Control got a second HQ-focused search. No ReadTranscript calls were needed."
+  },
+  "context_docs": [
+   "/workspace/context/DAVIDE_DECISION_PLAYBOOK.md",
+   "/workspace/context/MEDWAVE_DECISIONS_AND_APPROVALS.md",
+   "/workspace/context/MEDWAVE_CONTEXT_MASTER.md",
+   "/workspace/context/MEDWAVE_EDUCATION_LIBRARY.md"
+  ],
+  "context_docs_excluded": [
+   "/workspace/context/confidential/PRICE_LIST_2026-11.md (confidential pricing, deliberately not copied)"
+  ],
+  "workspace_files": {
+   "method": "local file walk + Ollama one-liners",
+   "files_seen": 21565,
+   "md_candidates": 532,
+   "summarised": 120
+  },
+  "store_assets_skipped": "Master Control store assets (raw CRM/HighLevel/Slack tool outputs with personal data) were not ingested."
+ },
+ "token_using_calls": {
+  "RecallMemory": 21,
+  "SearchTranscripts": 32,
+  "GetDynamicTools_schema_lookups": 4,
+  "note": "All results were written straight to files (write_to_file) so their contents did not enter the model context; a few small greps/heads were read to design the HQ rubric and check output quality.",
+  "calls": [
+   {
+    "tool": "RecallMemory",
+    "label": "davide-ruled-rules-decision",
+    "file": "raw/memory/davide-ruled-rules-decision.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "leads-booking-closer-walkthrough",
+    "file": "raw/memory/leads-booking-closer-walkthrough.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "hq-targets-kpi",
+    "file": "raw/memory/hq-targets-kpi.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "team-setters-closers-slack",
+    "file": "raw/memory/team-setters-closers-slack.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "channels-wa-hl-email",
+    "file": "raw/memory/channels-wa-hl-email.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "pricing-products",
+    "file": "raw/memory/pricing-products.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "buyer-approval-send",
+    "file": "raw/memory/buyer-approval-send.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "bots-reports-routine",
+    "file": "raw/memory/bots-reports-routine.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "elmien-slack",
+    "file": "raw/memory/elmien-slack.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "erich-unowned-owners",
+    "file": "raw/memory/erich-unowned-owners.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "us-email-stripe",
+    "file": "raw/memory/us-email-stripe.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "andries-calendar",
+    "file": "raw/memory/andries-calendar.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "team-roles",
+    "file": "raw/memory/team-roles.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "travel-events",
+    "file": "raw/memory/travel-events.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "kill-stop-pause",
+    "file": "raw/memory/kill-stop-pause.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "deposits-installs",
+    "file": "raw/memory/deposits-installs.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "meta-ads",
+    "file": "raw/memory/meta-ads.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "style-wording",
+    "file": "raw/memory/style-wording.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "partners-b2b",
+    "file": "raw/memory/partners-b2b.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "patient-clinician",
+    "file": "raw/memory/patient-clinician.txt"
+   },
+   {
+    "tool": "RecallMemory",
+    "label": "hq-walkthrough",
+    "file": "raw/memory/hq-walkthrough.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "652a33e0_outreach-control",
+    "file": "raw/transcripts/652a33e0_outreach-control.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "652a33e0_outreach-control_hq",
+    "file": "raw/transcripts/652a33e0_outreach-control_hq.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "1e97d809_sales-desk",
+    "file": "raw/transcripts/1e97d809_sales-desk.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "381a4c3c_sales-radar",
+    "file": "raw/transcripts/381a4c3c_sales-radar.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "9d0eae0f_leads-outreach-bot",
+    "file": "raw/transcripts/9d0eae0f_leads-outreach-bot.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "ba891246_smartbot",
+    "file": "raw/transcripts/ba891246_smartbot.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "08b5fd26_communication",
+    "file": "raw/transcripts/08b5fd26_communication.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "8049cbfc_messaging-perf",
+    "file": "raw/transcripts/8049cbfc_messaging-perf.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "758f74ee_inbox-manager",
+    "file": "raw/transcripts/758f74ee_inbox-manager.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "43b11883_deposits",
+    "file": "raw/transcripts/43b11883_deposits.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "0255ea66_installs",
+    "file": "raw/transcripts/0255ea66_installs.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "18cf206f_radar",
+    "file": "raw/transcripts/18cf206f_radar.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "24e6afc0_objection",
+    "file": "raw/transcripts/24e6afc0_objection.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "25007f12_wording-lab",
+    "file": "raw/transcripts/25007f12_wording-lab.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "28cb811f_outreach-bot",
+    "file": "raw/transcripts/28cb811f_outreach-bot.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "2a21b093_qa",
+    "file": "raw/transcripts/2a21b093_qa.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "37b88cb4_reporting",
+    "file": "raw/transcripts/37b88cb4_reporting.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "4bf3f031_context",
+    "file": "raw/transcripts/4bf3f031_context.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "a6eb18b1_meta-ads",
+    "file": "raw/transcripts/a6eb18b1_meta-ads.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "a0a59db3_legal",
+    "file": "raw/transcripts/a0a59db3_legal.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "ccb4f6bb_offer-engine",
+    "file": "raw/transcripts/ccb4f6bb_offer-engine.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "0968e26e_brochure",
+    "file": "raw/transcripts/0968e26e_brochure.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "353f6cf8_video",
+    "file": "raw/transcripts/353f6cf8_video.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "3a33d40d_mentor",
+    "file": "raw/transcripts/3a33d40d_mentor.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "49df5bea_vector",
+    "file": "raw/transcripts/49df5bea_vector.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "5cc75c2e_content",
+    "file": "raw/transcripts/5cc75c2e_content.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "5fe53a22_givetake",
+    "file": "raw/transcripts/5fe53a22_givetake.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "b49be58d_social",
+    "file": "raw/transcripts/b49be58d_social.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "b8fed67d_people",
+    "file": "raw/transcripts/b8fed67d_people.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "d70f0ac4_website",
+    "file": "raw/transcripts/d70f0ac4_website.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "e6d90d66_grokbot",
+    "file": "raw/transcripts/e6d90d66_grokbot.txt"
+   },
+   {
+    "tool": "SearchTranscripts",
+    "label": "189da52e_master-control-self",
+    "file": "raw/transcripts/189da52e_master-control-self.txt"
+   }
+  ]
+ },
+ "local_processing": {
+  "ollama_model": "qwen2.5:3b (Q4_K_M GGUF from Hugging Face, imported with ollama create; registry pull was blocked)",
+  "ollama_calls": 187,
+  "ollama_seconds_build": 406,
+  "headroom": {
+   "version": "headroom-ai 0.43.1 (Python, in ~/hr-venv; npm package needs the Python proxy)",
+   "mode": "in-process compress() \u2014 no proxy started, no network",
+   "results": [
+    {
+     "label": "davide-decisions",
+     "tokens_before": 51490,
+     "tokens_after": 17099,
+     "transforms": [
+      "router:protected:user_message",
+      "router:protected:user_message",
+      "router:smart_crusher:0.22"
+     ]
+    },
+    {
+     "label": "standing-rules",
+     "tokens_before": 52979,
+     "tokens_after": 20083,
+     "transforms": [
+      "router:protected:user_message",
+      "router:protected:user_message",
+      "router:smart_crusher:0.27"
+     ]
+    },
+    {
+     "label": "team",
+     "tokens_before": 49732,
+     "tokens_after": 18111,
+     "transforms": [
+      "router:protected:user_message",
+      "router:protected:user_message",
+      "router:smart_crusher:0.26"
+     ]
+    },
+    {
+     "label": "lead-handling",
+     "tokens_before": 59271,
+     "tokens_after": 21190,
+     "transforms": [
+      "router:protected:user_message",
+      "router:protected:user_message",
+      "router:smart_crusher:0.25"
+     ]
+    },
+    {
+     "label": "booking-and-calendars",
+     "tokens_before": 24389,
+     "tokens_after": 8860,
+     "transforms": [
+      "router:protected:user_message",
+      "router:protected:user_message",
+      "router:smart_crusher:0.26"
+     ]
+    },
+    {
+     "label": "targets-kpis",
+     "tokens_before": 13602,
+     "tokens_after": 4930,
+     "transforms": [
+      "router:protected:user_message",
+      "router:protected:user_message",
+      "router:smart_crusher:0.26"
+     ]
+    },
+    {
+     "label": "products-positioning",
+     "tokens_before": 45629,
+     "tokens_after": 18150,
+     "transforms": [
+      "router:protected:user_message",
+      "router:protected:user_message",
+      "router:smart_crusher:0.29"
+     ]
+    },
+    {
+     "label": "channels",
+     "tokens_before": 58271,
+     "tokens_after": 21483,
+     "transforms": [
+      "router:protected:user_message",
+      "router:protected:user_message",
+      "router:smart_crusher:0.27"
+     ]
+    },
+    {
+     "label": "other",
+     "tokens_before": 6531,
+     "tokens_after": 4302,
+     "transforms": [
+      "router:protected:user_message",
+      "router:protected:user_message",
+      "router:smart_crusher:0.61"
+     ]
+    }
+   ]
+  },
+  "facts_total": 2221,
+  "facts_unique_after_dedupe": 2004,
+  "untagged_sent_to_ollama": 197
+ },
+ "outputs": [
+  "code/build_brain.py",
+  "code/build_decision_model.py",
+  "code/index_workspace.py",
+  "decision-model.md",
+  "notes/booking-and-calendars.md",
+  "notes/bots.md",
+  "notes/channels.md",
+  "notes/davide-decisions.md",
+  "notes/index.md",
+  "notes/lead-handling.md",
+  "notes/other.md",
+  "notes/products-positioning.md",
+  "notes/standing-rules.md",
+  "notes/targets-kpis.md",
+  "notes/team.md",
+  "notes/workspace-index.md",
+  "raw/ (dumps as pulled; NOT redacted)"
+ ],
+ "privacy": "Notes and decision-model are redacted for emails, phone numbers and secret patterns; internal Slack user IDs kept. raw/ is as pulled and should not be pushed to GitHub unredacted."
+}
