@@ -1,0 +1,18 @@
+- Daily booking target: 7-10 high-quality appointments per day, goal is 20 high-quality appointments per day.
+- Sales calls excluded from calendars, walkthrough webinars not high-quality appointments.
+- Closers Andries and Elmien responsible for all scheduled appointments, both pre-call and post-call.
+- Approval process for demos managed by salespeople on calls, not through text messages or automated systems.
+- Own events and webinars focus on finding the best healthcare professionals and medical doctors.
+- Sterrenberg now responsible for automations and business intelligence, replacing his previous role as an appointment setter.
+- Fix the engine room (marketing → appointments → sales → operations) before anything else; 40 sales/month minimum.
+- HQ booked appointment definition: any lead booked into the MedWave sales calendars counts as high quality unless the booking is for a low-quality "walkthrough webinar".
+- Active Lifestyle and US nurse calls managed by Anthony.
+- GGGT persona booking route: Sender Davide, 'Thanks for completing the form on Facebook'; MedWave RSA; salesperson books demos; WhatsApp 'Booking'; drop calendar link.
+- QA lifted hold on community/provider list; salespeople book demos on calls.
+- Plans for Francois and Sterrenberg: 2 in-person events + 2 webinars/month; setters ≥400 texts/day; Sterrenberg automations and reactivation with GGGT.
+- No messages, bulk or automated, to the MedWave Community WhatsApp group (414 providers); salespeople book their demos on calls.
+- Lead messages may offer a demo, but demos are booked only on a salesperson call.
+- 20 HQ sets a day in total, 5 per setter, at least 400 texts per setter a day.
+- 0.8 deposits/day (16 since 12 Oct); 2,072 unread inbound conversations; 67% of 24,014 SA contacts inactive for 30+ days.
+- Top priority is the MedWave "engine room" (marketing to appointments to sales to operations), with a target of at least 2 sales/day and 40 sales/month.
+- As

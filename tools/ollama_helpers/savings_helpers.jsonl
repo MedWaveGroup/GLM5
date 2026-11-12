@@ -1,0 +1,13 @@
+{"ts": "2026-11-12T10:24:50+0200", "step": "smoke", "local": true, "model": "qwen2.5:3b", "chars_in": 19, "chars_out": 2, "est_paid_tokens_avoided": 5, "secs": 6.67}
+{"ts": "2026-11-12T10:26:09+0200", "step": "classify_reply", "local": true, "model": "qwen2.5:3b", "chars_in": 541, "chars_out": 99, "est_paid_tokens_avoided": 160, "secs": 3.29}
+{"ts": "2026-11-12T10:26:14+0200", "step": "classify_reply", "local": true, "model": "qwen2.5:3b", "chars_in": 545, "chars_out": 165, "est_paid_tokens_avoided": 177, "secs": 4.7}
+{"ts": "2026-11-12T10:27:07+0200", "step": "summarise_chunk", "local": true, "model": "qwen2.5:3b", "chars_in": 3358, "chars_out": 1211, "est_paid_tokens_avoided": 1142, "secs": 31.13}
+{"ts": "2026-11-12T10:27:22+0200", "step": "summarise_chunk", "local": true, "model": "qwen2.5:3b", "chars_in": 2027, "chars_out": 878, "est_paid_tokens_avoided": 726, "secs": 14.55}
+{"ts": "2026-11-12T10:27:30+0200", "step": "summarise_chunk", "local": true, "model": "qwen2.5:3b", "chars_in": 1878, "chars_out": 652, "est_paid_tokens_avoided": 632, "secs": 22.64}
+{"ts": "2026-11-12T10:27:59+0200", "step": "summarise_chunk", "local": true, "model": "qwen2.5:3b", "chars_in": 7563, "chars_out": 1321, "est_paid_tokens_avoided": 2221, "secs": 37.62}
+{"ts": "2026-11-12T10:28:42+0200", "step": "summarise_chunk", "local": true, "model": "qwen2.5:3b", "chars_in": 7100, "chars_out": 1790, "est_paid_tokens_avoided": 2222, "secs": 72.29}
+{"ts": "2026-11-12T10:29:13+0200", "step": "summarise_merge", "local": true, "model": "qwen2.5:3b", "chars_in": 2468, "chars_out": 1811, "est_paid_tokens_avoided": 1069, "secs": 73.49}
+{"ts": "2026-11-12T10:29:16+0200", "step": "summarise_chunk", "local": true, "model": "qwen2.5:3b", "chars_in": 870, "chars_out": 292, "est_paid_tokens_avoided": 290, "secs": 34.23}
+{"ts": "2026-11-12T10:29:41+0200", "step": "summarise_merge", "local": true, "model": "qwen2.5:3b", "chars_in": 3003, "chars_out": 1957, "est_paid_tokens_avoided": 1240, "secs": 24.96}
+{"ts": "2026-11-12T10:30:17+0200", "step": "summarise_chunk", "local": true, "model": "qwen2.5:3b", "chars_in": 1601, "chars_out": 396, "est_paid_tokens_avoided": 499, "secs": 7.48}
+{"ts": "2026-11-12T10:30:33+0200", "step": "summarise_chunk", "local": true, "model": "qwen2.5:3b", "chars_in": 4136, "chars_out": 931, "est_paid_tokens_avoided": 1266, "secs": 16.32}

@@ -16,13 +16,30 @@ brain/          Python package. Command: brain
 skills/         SKILL.md files for the six commands
 sources/        redacted notes, decision-model.md, manifest.json
 scripts/        the original export builders (build_brain.py and the two siblings)
+tools/ollama_helpers/  loopback-only Ollama helpers (no sends, no HighLevel calls)
+docs/           operating knowledge base, Ollama-first process flow, gap analysis
+CHANGELOG.md    dated repo changes
 brain.toml      Ollama hosts, loopback only
 tests/          pytest. Ollama is mocked
 ```
 
+## Operating docs (12 Nov 2026)
+
+The day-to-day operating pack lives in `docs/`. Start here:
+
+- [Truncated knowledge base](docs/KNOWLEDGE_BASE_TRUNCATED.md) and the printable [PDF](docs/MedWave_Knowledge_Base_2026-11-12.pdf)
+- [Ollama-first process flow](docs/PROCESS_FLOW.md) (diagram: [flow.png](docs/flow.png), mermaid source: [flow.mmd](docs/flow.mmd))
+- [Ollama gap analysis](docs/OLLAMA_GAP_ANALYSIS.md) — what already runs locally, and the remaining gaps
+- Raw Ollama drafts used to seed the knowledge base: [docs/ollama_drafts/](docs/ollama_drafts/)
+- Helper scripts: [tools/ollama_helpers/](tools/ollama_helpers/)
+
+Every task still starts with a deterministic rule or vault lookup, then local Ollama on `127.0.0.1:11434` (no tunnels). A paid model is used only when Ollama cannot do the task. See the process flow for the 13 stages, the escalation trigger, and the send gates (including the CPD no-pricing hold, monthly-finance amounts only, the 50-email daily cap, and the 24-hour skip for blasts and reactivation). The one-hour re-touch for brand-new leads stays.
+
+See [CHANGELOG.md](CHANGELOG.md) for what landed on 12 Nov.
+
 ## Token-saving design
 
-Routing order, every time:
+Routing order, every time (the full 13-stage flow is in [docs/PROCESS_FLOW.md](docs/PROCESS_FLOW.md)):
 
 1. **A deterministic rule or a lookup.** `decide`, `triage-lead`, `assign`, and `report` answer from the standing rules with no model call when the situation matches. `ask` retrieves with BM25 (keyword search) over the vault. There are no paid embeddings.
 2. **A local Ollama model.** Hosts in `brain.toml`, first match wins. Davide's Mac is `http://127.0.0.1:11434` with `qwen2.5:7b` (M3, 24 GB). The Linux box is the same loopback address with `qwen2.5:3b`. The pool health-checks `/api/tags` and falls through when a host is down or its preferred model is not installed. If `nomic-embed-text` is installed, `ask` reranks the BM25 shortlist with it. If it is not, BM25 stands.
