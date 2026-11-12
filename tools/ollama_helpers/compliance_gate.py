@@ -76,11 +76,12 @@ def gate(m: dict) -> dict:
 
     # Pricing rules
     amounts = _amounts(text) + ([1] if USD.search(text) else [])
-    is_cpd = any(t.startswith("cpd") for t in tags)
-    attended = any(t in ("cpd - attended", "event attended", "webinar attended") for t in tags)
+    is_cpd = any("cpd" in t for t in tags)
+    # Davide 12 Nov 2026 10:42 SAST: hold ALL pricing (finance amounts too) for
+    # every CPD-tagged contact; "cpd - attended" is NOT an exemption.
     if amounts:
-        if is_cpd and not attended:
-            blocks.append("CPD-tagged doctor has not attended an online event: no pricing")
+        if is_cpd:
+            blocks.append("CPD-tagged contact: no pricing at all, finance amounts included")
         for v in _amounts(text):
             if v >= 10000:
                 blocks.append(f"full price R{v:,.0f} in text: quote finance monthly amount only")
@@ -90,8 +91,8 @@ def gate(m: dict) -> dict:
                 warns.append(f"R{v:,.0f}/month is not one of the approved 11%/60-month figures")
         if re.search(r"\b\d{1,2}(\.\d+)?\s?%|\binterest\b|\b\d{2}\s?months?\b|\bdeposit\b", text, re.I):
             blocks.append("lead-facing price text mentions rate, term or deposit: monthly amount only")
-    elif is_cpd and not attended and PRICE_WORDS.search(text):
-        warns.append("CPD lead (no event yet) and text talks about price/finance: check")
+    elif is_cpd and PRICE_WORDS.search(text):
+        warns.append("CPD lead and text talks about price/finance: check")
 
     # Wording rules
     for rx, why in BANNED:
