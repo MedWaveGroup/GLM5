@@ -26,7 +26,7 @@ It looks like you have a series of entries detailing various aspects of a projec
 8. **Booth Baseline Image**: Supersedes booth-dimension conflict; proposals may show booth in prospect's branding.
 9. **Sales Statistics**: "Sold out 18 months in a row" is allowed as a past fact
 
-## Fact log (567 facts)
+## Fact log (582 facts)
 
 ## Products
 
@@ -48,5 +48,8 @@ It looks like you have a series of entries detailing various aspects of a projec
 - [[products-positioning/products-positioning-undated-part-4|undated part 4]]
 - [[products-positioning/products-positioning-undated-part-5|undated part 5]]
 - [[products-positioning/products-positioning-undated-part-6|undated part 6]]
+- [[products-positioning/products-positioning-2026-11-09-davide-t262u-t263u-20-51-20-55-sast-in-outreach-control-s-own-chat|2026 11 09 davide t262u t263u 20 51 20 55 sast in outreach control s own chat]]
+- [[products-positioning/products-positioning-2026-11-09-davide-t261u-t264u-20-50-21-00-sast-in-outreach-control-s-own-chat|2026 11 09 davide t261u t264u 20 50 21 00 sast in outreach control s own chat]]
+- [[products-positioning/products-positioning-2026-11-12|2026 11 12]]
 
 Related: [[index]] · [[Start here]] · [[decision-model]]

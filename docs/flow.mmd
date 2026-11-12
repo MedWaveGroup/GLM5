@@ -1,0 +1,26 @@
+flowchart TD
+  A[Intake<br/>HighLevel inbound reply · website form · reactivation list · Slack request] --> B[Privacy scrub<br/>privacy_scrub.py · no phones/emails/tokens in prompts]
+  B --> C{Deterministic rules first<br/>STOP / opt-out / DND · booked · US channel · auto-reply}
+  C -- hard stop --> X[Suppress / no send<br/>log reason]
+  C -- passes --> D[Ollama classify<br/>qwen2.5 on 127.0.0.1:11434<br/>classify_reply.py]
+  D --> E[Brain lookup<br/>brain decide / triage-lead / ask<br/>BM25 over vault, no paid embeddings]
+  E --> F{Standard wording exists?}
+  F -- yes --> G[Fill approved template<br/>finance_quote.py for monthly figures]
+  F -- no --> H[Ollama draft<br/>Headroom compress first]
+  G --> I[Compliance + dedupe gate<br/>compliance_gate.py · dedupe_wording.py]
+  H --> I
+  I -- block --> J{Fixable locally?}
+  J -- yes, retry once --> H
+  J -- no --> K[ESCALATE: paid model / MC<br/>lead-specific wording · objection not in library ·<br/>Ollama down or low confidence · 2 failed local drafts]
+  K --> I
+  I -- pass --> L{Send gates}
+  L --> L1[Email ≤ 50/day · volume on WhatsApp]
+  L --> L2[24h no-contact for blasts and reactivation<br/>1h re-touch kept for brand-new leads]
+  L --> L3[≤ 3 automated touches/day · window 09:00–10:59 main]
+  L --> L4[CPD tag and no event attended → no pricing<br/>finance monthly only, never full price]
+  L1 & L2 & L3 & L4 --> M{Needs a human?}
+  M -- buyer · Red item · spend > R5,000 · new external send type --> N[Davide approval card / Slack owner nudge]
+  M -- no --> O[Send via HighLevel<br/>tag davide-bot-outreach]
+  N --> O
+  O --> P[Log<br/>sends_log.csv · savings.jsonl · OC FYI → Master Control]
+  P --> Q[Ollama digest<br/>summarise.py → MC bullets for Davide]

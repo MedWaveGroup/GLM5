@@ -28,7 +28,7 @@ Based on the information provided, here's a summary of the key points and action
 10. **BDRs**: BDRs (under Francois): Erich, Eddie, Hazel, and Michael Steytler. Sterrenberg is not a BDR; he owns automations and reactivation.
 11. **Lead Messages**: Lead messages may offer a demo,
 
-## Fact log (694 facts)
+## Fact log (704 facts)
 
 ## Dated notes
 
@@ -48,5 +48,7 @@ Based on the information provided, here's a summary of the key points and action
 - [[lead-handling/lead-handling-undated-part-6|undated part 6]]
 - [[lead-handling/lead-handling-undated-part-7|undated part 7]]
 - [[lead-handling/lead-handling-undated-part-8|undated part 8]]
+- [[lead-handling/lead-handling-2026-11-09-standing-davide-t259u-t260u-20-47-sast-in-outreach-control-s-own-chat|2026 11 09 standing davide t259u t260u 20 47 sast in outreach control s own chat]]
+- [[lead-handling/lead-handling-2026-11-12|2026 11 12]]
 
 Related: [[index]] · [[Start here]] · [[decision-model]]
