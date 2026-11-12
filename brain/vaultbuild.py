@@ -45,6 +45,25 @@ _PEOPLE = [
 ]
 
 
+
+def _install_objections(out_dir: Path, notes_dir: Path) -> int:
+    """Copy sources/objections cards and the objections MOC into the vault."""
+    src_dir = Path(notes_dir).parent / "objections"
+    moc = Path(notes_dir).parent / "objections.md"
+    count = 0
+    if src_dir.is_dir():
+        dest = Path(out_dir) / "objections"
+        dest.mkdir(parents=True, exist_ok=True)
+        for path in sorted(src_dir.glob("*.md")):
+            text = redact(path.read_text(encoding="utf-8", errors="replace"))
+            _write(dest / path.name, text)
+            count += 1
+    if moc.exists():
+        text = redact(moc.read_text(encoding="utf-8", errors="replace"))
+        _write(Path(out_dir) / "objections.md", text)
+    return count
+
+
 def compile_vault(notes_dir: Path, decision_model: Path, out_dir: Path) -> dict:
     notes_dir = Path(notes_dir)
     out_dir = Path(out_dir)
@@ -91,6 +110,9 @@ def compile_vault(notes_dir: Path, decision_model: Path, out_dir: Path) -> dict:
         model = model.replace("[[../decision-model|decision-model]]", "[[decision-model]]")
         _write(out_dir / "decision-model.md", model)
         written.append("decision-model.md")
+    obj_count = _install_objections(out_dir, notes_dir)
+    if obj_count:
+        topic_counts["objections"] = obj_count
     _write(out_dir / "Start here.md", _start_here(rule_links, people_links, product_links))
     _write(out_dir / "index.md", _index(out_dir, topic_counts))
     problems = _scan(out_dir)
@@ -520,7 +542,7 @@ def _start_here(rules: list[str], people: list[str], products: list[str]) -> str
         "- [[decision-model]] — how Davide decides, and the HQ rubric",
         "- [[standing-rules]] — rule cards and the fact log",
         "- [[team]] — one note per person",
-        "- [[lead-handling]] · [[booking-and-calendars]] · [[targets-kpis]]",
+        "- [[lead-handling]] · [[objections]] · [[booking-and-calendars]] · [[targets-kpis]]",
         "- [[products-positioning]] · [[channels]] · [[bots]] · [[davide-decisions]]",
         "- [[other]] · [[workspace-index]]",
         "",
@@ -532,6 +554,7 @@ def _start_here(rules: list[str], people: list[str], products: list[str]) -> str
         "- `brain assign \"task\"`",
         "- `brain report`",
         "- `brain ingest`",
+        "- `/workspace/team/outreach-control/ask_brain.sh \"question\"` — objection notes only, then qwen2.5:3b",
         "",
         "Local first, tokens last.",
         "",
@@ -563,7 +586,7 @@ def _index(out_dir: Path, topic_counts: dict[str, int]) -> str:
         "",
         "## How to use",
         "",
-        "- Rulings with dates: [[davide-decisions]]. Hard rules: [[standing-rules]].",
+        "- Rulings with dates: [[davide-decisions]]. Hard rules: [[standing-rules]]. Objection cards: [[objections]].",
         "- Booking a lead: [[booking-and-calendars]], then the HQ rubric in [[decision-model]].",
         "- Who is who: [[team]] and [[bots]].",
         "- Each fact carries a `_source_` line. Transcript snippets are undated search excerpts.",

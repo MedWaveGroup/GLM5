@@ -115,7 +115,7 @@ It looks like you have a series of entries detailing various aspects of a projec
   _source: memory:profile_
 - As of 1 Nov 2026, Davide defined Master Control's number one task as making sure MedWave's whole pipeline is running: content is being created, ads are running, SMSs are going out, appointments are being booked, sales are being taken and devices are being sold. He wants this presented to him as a dashboard.  
   _source: memory:profile_
-- SA prices (ZAR, excluding VAT): Neuro-100S Mobile R100k, Neuro-100S flagship R190k, WBV R175k, panel plus WBV package R295k, Business Package R345k. US prices (16 Oct): $15k standard, install +$1k, demo $10k. US booths: $35k single, $59k dual. Total marketing spend across all channels must stay under US$800 a day. The R2,500 referral is for SA employees only; there's no approved customer referral offer.  
+- SUPERSEDED 12 Nov 2026 10:21 SAST for lead-facing quoting of full equipment prices (R100k / R190k and any list price). Those figures must not be sent to leads. Use only the monthly amounts in [[monthly-prices-only]] / [[patient-price]], and never quote any price to a CPD-list doctor who has not attended a MedWave online event. Historical list (kept for internal record, not for lead copy): SA prices (ZAR, excluding VAT): Neuro-100S Mobile R100k, Neuro-100S flagship R190k, WBV R175k, panel plus WBV package R295k, Business Package R345k. US prices (16 Oct): $15k standard, install +$1k, demo $10k. US booths: $35k single, $59k dual. Total marketing spend across all channels must stay under US$800 a day. The R2,500 referral is for SA employees only; there's no approved customer referral offer.  
   _source: memory:profile_
 - Davide is pushing to open as many B2B distribution, affiliate and booth/panel partnerships as possible (e.g., Active Lifestyle Solutions/Technogym with Tony Payne, Welltech with Toni toward Virgin Active, MedSci/InBody SA via Ian's proposal). The Radar bot (18cf206f-08c2-4fb6-a484-bf0e70f818a6, created 1 Nov 2026) tracks them and reports to Master Control; Legal bot keeps the NDA and agreement register; People Memory knows who's who. Rozanne's work email is the [email] address at medwavegroup.co  
   _source: memory:profile_
@@ -534,7 +534,7 @@ It looks like you have a series of entries detailing various aspects of a projec
   _source: MEDWAVE_CONTEXT_MASTER.md › 2. People_
 - Francois coordinated the Technogym demo booth install at Costa Kapnius's office (V&A Waterfront).  
   _source: MEDWAVE_CONTEXT_MASTER.md › 2. People_
-- Neuro-100S Mobile R100,000: 432 LEDs (288 at 635 nm, 144 at 810 nm), 920×420×65 mm.  
+- SUPERSEDED 12 Nov 2026 10:21 SAST for lead-facing quotes of the full price (internal spec only). Neuro-100S Mobile R100,000: 432 LEDs (288 at 635 nm, 144 at 810 nm), 920×420×65 mm.  
   _source: MEDWAVE_CONTEXT_MASTER.md › 3. Products and SA prices (ZAR, excl. VAT, 8 Oct)_
 - Neuro-100S flagship R190,000: 585 LEDs (448 at 635 nm, 137 at 810 nm), 929×377×60 mm.  
   _source: MEDWAVE_CONTEXT_MASTER.md › 3. Products and SA prices (ZAR, excl. VAT, 8 Oct)_
@@ -1184,3 +1184,44 @@ It looks like you have a series of entries detailing various aspects of a projec
   _source: transcript:Grok Bot#pos59 (assistant)_
 - Bot here, confirmed. I have no routines, so nothing needed changing, and nothing currently goes to Davide on a schedule. Today's work: I connected the MedWave Payments Ledger (read-only API) and tested it. It returned 148 paid appointments (130 deposits, 18 full payments, about R7.27m in total), an  
   _source: transcript:Grok Bot#pos15 (assistant)_
+
+### 2026-11-09 (Davide t262u/t263u, 20:51–20:55 SAST, in Outreach Control's own chat)
+
+- **Aesthetics leads get the Optimum brochure** (Optimum-100S anti-aging and collagen renewal). File: /workspace/team/outreach-control/assets/MedWave_Optimum-100S_brochure_2026-11-09.pdf. Davide: "Aesthetics leads get the Optimum brochure you will see in the Davide RSA whatsapp channel". Medical leads keep the Neuro-100S "One Panel, Four Areas of Practice" brochure.
+- **The Vibration Plate pairs with the Optimum for accelerated weight-loss results.** File: /workspace/team/outreach-control/assets/MedWave_WBV_Vibration_Plate_brochure_2026-11-09.pdf (Whole Body Metabolic Vibration Plate).
+  - Davide's 20-minute protocol: 5 min on the vibe plate, 5 min under the light on the front, 5 min on the back, then 5 min on the vibe plate again.
+  - Davide says patients typically lose 4–9 cm around the waist and hips over that short time. This is Davide's verbal claim. It's an outcome claim, so it needs QA and Francois/Sterrenberg sign-off before it goes into written outreach.
+  - MedWave also gives patients a 128-page eating guide so they can eat better and make lifestyle changes.
+- Wording caution: both brochures say "red light therapy" and the Optimum one says "SAHPRA registered". Our own messages still say "red light technology" and make no SAHPRA claims; the brochures themselves are the approved assets.
+  - _source: Davide, Outreach Control chat t262u/t263u, 9 Nov 2026_
+
+### 2026-11-09 (Davide t261u/t264u, 20:50–21:00 SAST, in Outreach Control's own chat)
+
+- **Top value give for every lead: Davide's 9-minute MedWave overview video, https://youtu.be/z9_6Q-7tvIs.**
+  - Davide describes it as a high-value piece of content. In 9 minutes it shows what photobiomodulation is, testimonials, practitioners talking, and the equipment MedWave sells. He likes to send it to customers.
+  - Use it as one of the 3 Give, Give, Give, Take touches, usually the first or second.
+  - _source: Davide, Outreach Control chat t261u/t264u, 9 Nov 2026_
+
+- **Value give for practitioners: MedWave Smart Talks, https://www.medwavegroup.com/medwave-smart-talks/.** Davide (t265u, 9 Nov 21:03): "a really great added value page for practitioners to see the frequently asked questions in a video format with the science behind everything". Use it as one of the 3 Give, Give, Give, Take touches for clinicians.
+- Smart Talks: the FIRST video on that page is the practitioner favourite. It covers contraindications, dosing and patient personalisation, so lead with it for clinicians (Davide t266u, 9 Nov 21:04).
+
+### 2026-11-12
+
+- "Already a MedWave or another provider in my area" is an objection to handle, not a disqualifier. Never close, set DND or move to no-contact for that reason. Many restaurants can share one area. Demand often outstrips a single provider, so MedWave needs to expand. In lead copy do not use the internal "hundreds of thousands" figure; say "many people in the area need this kind of treatment."
+  _source: Davide Duranti, 12 Nov 2026 06:21 SAST, Outreach Control chat t330u_
+- A cancellation is never a price decline. Do not send the patient price line or the providers link, and do not set DND, just because a lead cancelled a slot or mentioned a nearby provider.
+  _source: Davide Duranti and Outreach Control, 12 Nov 2026, after the Chanelle Kemp watcher error_
+- Objection-handling knowledge belongs in the Obsidian brain and should be pulled by the local Ollama model, so agents do not load large playbook context windows.
+  _source: Davide Duranti, 12 Nov 2026, Outreach Control chat t332u_
+- The two practitioner / B2B "already a provider nearby" replies are approved. The patient reply is not approved. Patient leads with this objection go notify-only to their owner. Do not send them a reply.
+  _source: Davide Duranti, 12 Nov 2026 06:25 SAST_
+- SUPERSEDED 12 Nov 2026 10:21 SAST: do not quote full equipment prices (R100,000, R190,000, R100k, R190k or any list price) in lead-facing copy. The 11 Nov patient price line that used those figures is withdrawn. For everyone who may be quoted a price, use only monthly amounts, excluding VAT, with no deposit: Neuro Mobile + stand about R2,174 a month; Optimum panel + stand about R3,805 a month; Neuro 100-S panel + stand about R4,131 a month; Recovery Booth about R5,436 a month; Booth + Vibe package about R8,153 a month. Do not mention interest rate, term length or other finance terms in lead-facing wording. The replacement patient price line (PENDING Davide's wording confirmation) is: "Thanks for your interest. Our home-use Neuro-100S Mobile works out to about R2,174 a month and our flagship medical Neuro-100S about R4,131 a month, both excluding VAT, with no deposit. Does that fit within your budget? If so, I'd be happy to set up a quick call."
+  _source: Davide Duranti, 12 Nov 2026 10:21 SAST, relayed by Master Control_
+- Doctors on any CPD list get no pricing of any kind (no price line, no monthly figures, no finance amounts) until they have attended a MedWave online event. It is CPD, not CBD. They are identified by HighLevel tags containing "cpd" (case-insensitive). Until attendance is confirmed (tag `cpd - attended`), only an event invite or a discovery call. Exact CPD tags found on 12 Nov in the SA location: `cpd opt-in`, `cpd - attended`, `cpd - not attended`, `cpd - 10 nov`, `cpd - web invite`, `cpd - davide sent`, `cpd - intro - msg1`, `cpd - intro - msg2`, `cpd - intro - msg3`. This is a hold rule, not an opt-out; do not add them to the suppression list for having a CPD tag.
+  _source: Davide Duranti, 12 Nov 2026 10:21 SAST, relayed by Master Control_
+- Before any blast or reactivation send, skip anyone who received any message from MedWave (bot, BDR or closer, any channel) in the last 24 hours, checked against HighLevel conversation history, not only our logs. The daily quiet-lead batch is treated as reactivation, so the 24-hour skip applies to it. The existing 48-hour skip for reactivation stays and is stricter. Do not apply the 24-hour skip to the 1-hour re-touch of brand-new unreplied leads. That cadence stays on: at most 3 automated touches a day, each adding something new, stopping on reply, booking, opt-out or owner pickup.
+  _source: Davide Duranti, 12 Nov 2026 10:21 SAST, corrected 10:22 SAST, relayed by Master Control_
+- Never send a contact the same or near-identical wording twice. Compare the proposed text against their past outbound messages in HighLevel. This applies to every send, including 1-hour re-touches.
+  _source: Davide Duranti, 12 Nov 2026 10:21–10:22 SAST, relayed by Master Control_
+- Sequence membership (N1, B1–B5) is shown only by the sequence tag on each HighLevel contact. Detect it from the tags only. Exact sequence tag names found on 12 Nov in the SA location: `n1`, `n1 - b5`, `b1`, `b1 - b5`, `b2`, `b3`, `b4`, `b5`. If contacted in the last 24 hours, pause sequence messaging. If they reply, book immediately. `wa-react-1112-b1` is a reactivation batch tag, not an N1/B1–B5 sequence tag.
+  _source: Davide Duranti, 12 Nov 2026 10:25 SAST, relayed by Master Control_

@@ -22,11 +22,17 @@ Here are 6 short bullet points summarizing the most important durable points fro
 - **Marketing Content**: Marketing content must be B2B only, not consumer-facing, and avoid showing the device beating people-in-treatment shots.
 - **WhatsApp Usage**: WhatsApp messaging and templates are for South Africa only; US outreach uses SMS/iMessage through the US HighLevel account.
 
-## Fact log (663 facts)
+## Fact log (680 facts)
 
 ## Rule cards
 
 - [[spend-cap|Green/Amber delegated; Red and spend above R5,000 stay with Davide]]
+- [[cpd-no-pricing|CPD-list doctors get no pricing until they attend an event]]
+- [[monthly-prices-only|Lead-facing prices are monthly amounts only, never full list prices]]
+- [[blast-reactivation-24h-skip|Skip blasts and reactivation if the lead was contacted in the last 24 hours]]
+- [[no-duplicate-wording|Never send the same or near-identical wording twice]]
+- [[new-lead-one-hour-retouch|One-hour re-touch for brand-new unreplied leads stays on]]
+- [[sequence-n1-b1-b5|N1 and B1–B5 sequence tags: pause if contacted in 24 hours, book on reply]]
 - [[no-sa-pricing-before-call|No SA pricing in writing before a sales call]]
 - [[buyer-rule|Buyers go to Davide]]
 - [[external-send-needs-davide|External sends need Davide's own words]]
@@ -61,5 +67,7 @@ Here are 6 short bullet points summarizing the most important durable points fro
 - [[standing-rules/standing-rules-undated-part-6|undated part 6]]
 - [[standing-rules/standing-rules-undated-part-7|undated part 7]]
 - [[standing-rules/standing-rules-undated-part-8|undated part 8]]
+- [[standing-rules/standing-rules-2026-11-09-standing-davide-t259u-t260u-20-47-sast-in-outreach-control-s-own-chat|2026 11 09 standing davide t259u t260u 20 47 sast in outreach control s own chat]]
+- [[standing-rules/standing-rules-2026-11-12|2026 11 12]]
 
 Related: [[index]] · [[Start here]] · [[decision-model]]

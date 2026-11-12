@@ -22,7 +22,7 @@ Here are 6 short bullet points summarizing the most important durable points fro
 - **Approval Limits**: Master Control may approve up to R5,000 without Davide's prior approval, but all approvals must be reported to him by 20:30.
 - **Communication Channels**: Davide wants Slack used for all internal communication with the MedWave team, and WhatsApp is reserved for follow-ups and when Slack isn't available. Email is the backup when Slack isn't available or someone isn't on Slack.
 
-## Fact log (613 facts)
+## Fact log (622 facts)
 
 ## Dated notes
 
@@ -42,5 +42,6 @@ Here are 6 short bullet points summarizing the most important durable points fro
 - [[davide-decisions/davide-decisions-undated-part-6|undated part 6]]
 - [[davide-decisions/davide-decisions-undated-part-7|undated part 7]]
 - [[davide-decisions/davide-decisions-undated-part-8|undated part 8]]
+- [[davide-decisions/davide-decisions-2026-11-12|2026 11 12]]
 
 Related: [[index]] · [[Start here]] · [[decision-model]]

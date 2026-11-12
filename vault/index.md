@@ -14,20 +14,21 @@ Built from the 9 Nov 2026 export. Facts stay dated and sourced. Start at [[Start
 - [[booking-and-calendars]] (283 items)
 - [[bots]] (31 items)
 - [[channels]] (690 items)
-- [[davide-decisions]] (613 items)
-- [[lead-handling]] (694 items)
+- [[davide-decisions]] (622 items)
+- [[lead-handling]] (704 items)
 - [[other]] (139 items)
-- [[products-positioning]] (567 items)
-- [[standing-rules]] (663 items)
+- [[products-positioning]] (582 items)
+- [[standing-rules]] (680 items)
 - [[targets-kpis]] (148 items)
 - [[team]] (577 items)
 - [[workspace-index]] (workspace files)
+- [[objections]] (17 items)
 - [[decision-model]] — how Davide decides, plus the HQ rubric
 - [[Start here]]
 
 ## How to use
 
-- Rulings with dates: [[davide-decisions]]. Hard rules: [[standing-rules]].
+- Rulings with dates: [[davide-decisions]]. Hard rules: [[standing-rules]]. Objection cards: [[objections]].
 - Booking a lead: [[booking-and-calendars]], then the HQ rubric in [[decision-model]].
 - Who is who: [[team]] and [[bots]].
 - Each fact carries a `_source_` line. Transcript snippets are undated search excerpts.
@@ -101,6 +102,7 @@ Built from the 9 Nov 2026 export. Facts stay dated and sourced. Start at [[Start
 - [[davide-decisions/davide-decisions-2026-11-06]]
 - [[davide-decisions/davide-decisions-2026-11-07]]
 - [[davide-decisions/davide-decisions-2026-11-09]]
+- [[davide-decisions/davide-decisions-2026-11-12]]
 - [[davide-decisions/davide-decisions-undated-part-1]]
 - [[davide-decisions/davide-decisions-undated-part-2]]
 - [[davide-decisions/davide-decisions-undated-part-3]]
@@ -117,8 +119,10 @@ Built from the 9 Nov 2026 export. Facts stay dated and sourced. Start at [[Start
 - [[lead-handling/lead-handling-2026-11-04]]
 - [[lead-handling/lead-handling-2026-11-05]]
 - [[lead-handling/lead-handling-2026-11-06]]
+- [[lead-handling/lead-handling-2026-11-09-standing-davide-t259u-t260u-20-47-sast-in-outreach-control-s-own-chat]]
 - [[lead-handling/lead-handling-2026-11-09]]
 - [[lead-handling/lead-handling-2026-11-10]]
+- [[lead-handling/lead-handling-2026-11-12]]
 - [[lead-handling/lead-handling-undated-part-1]]
 - [[lead-handling/lead-handling-undated-part-2]]
 - [[lead-handling/lead-handling-undated-part-3]]
@@ -128,6 +132,24 @@ Built from the 9 Nov 2026 export. Facts stay dated and sourced. Start at [[Start
 - [[lead-handling/lead-handling-undated-part-7]]
 - [[lead-handling/lead-handling-undated-part-8]]
 - [[lead-handling]]
+- [[objections/already-a-provider-nearby]]
+- [[objections/budget-too-expensive]]
+- [[objections/cancellation-is-not-a-price-decline]]
+- [[objections/cpd-no-pricing]]
+- [[objections/finance-interest]]
+- [[objections/ghosting]]
+- [[objections/guardrails]]
+- [[objections/low-patient-volume]]
+- [[objections/monthly-prices-only]]
+- [[objections/need-to-think-partner]]
+- [[objections/no-space]]
+- [[objections/not-interested]]
+- [[objections/not-now-timing]]
+- [[objections/patient-price]]
+- [[objections/science-doubt]]
+- [[objections/send-windows]]
+- [[objections/too-busy-no-staff]]
+- [[objections]]
 - [[other/other-2026-11-01]]
 - [[other/other-2026-11-02]]
 - [[other/other-2026-11-03]]
@@ -144,6 +166,9 @@ Built from the 9 Nov 2026 export. Facts stay dated and sourced. Start at [[Start
 - [[products-positioning/products-positioning-2026-11-05]]
 - [[products-positioning/products-positioning-2026-11-06]]
 - [[products-positioning/products-positioning-2026-11-07]]
+- [[products-positioning/products-positioning-2026-11-09-davide-t261u-t264u-20-50-21-00-sast-in-outreach-control-s-own-chat]]
+- [[products-positioning/products-positioning-2026-11-09-davide-t262u-t263u-20-51-20-55-sast-in-outreach-control-s-own-chat]]
+- [[products-positioning/products-positioning-2026-11-12]]
 - [[products-positioning/products-positioning-undated-part-1]]
 - [[products-positioning/products-positioning-undated-part-2]]
 - [[products-positioning/products-positioning-undated-part-3]]
@@ -151,18 +176,24 @@ Built from the 9 Nov 2026 export. Facts stay dated and sourced. Start at [[Start
 - [[products-positioning/products-positioning-undated-part-5]]
 - [[products-positioning/products-positioning-undated-part-6]]
 - [[products-positioning]]
+- [[standing-rules/blast-reactivation-24h-skip]]
 - [[standing-rules/bots-report-to-mc]]
 - [[standing-rules/buyer-rule]]
+- [[standing-rules/cpd-no-pricing]]
 - [[standing-rules/elmien-slack-only]]
 - [[standing-rules/escalate-on-slack]]
 - [[standing-rules/external-send-needs-davide]]
 - [[standing-rules/hq-definition]]
+- [[standing-rules/monthly-prices-only]]
+- [[standing-rules/new-lead-one-hour-retouch]]
+- [[standing-rules/no-duplicate-wording]]
 - [[standing-rules/no-sa-pricing-before-call]]
 - [[standing-rules/no-travel]]
 - [[standing-rules/no-workflow-off]]
 - [[standing-rules/opt-out]]
 - [[standing-rules/optimum-neuro]]
 - [[standing-rules/owned-leads-stay]]
+- [[standing-rules/sequence-n1-b1-b5]]
 - [[standing-rules/spend-cap]]
 - [[standing-rules/standing-rules-2026-11-01]]
 - [[standing-rules/standing-rules-2026-11-02]]
@@ -171,6 +202,8 @@ Built from the 9 Nov 2026 export. Facts stay dated and sourced. Start at [[Start
 - [[standing-rules/standing-rules-2026-11-05]]
 - [[standing-rules/standing-rules-2026-11-06]]
 - [[standing-rules/standing-rules-2026-11-07]]
+- [[standing-rules/standing-rules-2026-11-09-standing-davide-t259u-t260u-20-47-sast-in-outreach-control-s-own-chat]]
+- [[standing-rules/standing-rules-2026-11-12]]
 - [[standing-rules/standing-rules-undated-part-1]]
 - [[standing-rules/standing-rules-undated-part-2]]
 - [[standing-rules/standing-rules-undated-part-3]]

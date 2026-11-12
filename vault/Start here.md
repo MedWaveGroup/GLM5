@@ -21,7 +21,7 @@ This is the MedWave manager brain for Master Control. Answer from a rule or from
 - [[decision-model]] — how Davide decides, and the HQ rubric
 - [[standing-rules]] — rule cards and the fact log
 - [[team]] — one note per person
-- [[lead-handling]] · [[booking-and-calendars]] · [[targets-kpis]]
+- [[lead-handling]] · [[objections]] · [[booking-and-calendars]] · [[targets-kpis]]
 - [[products-positioning]] · [[channels]] · [[bots]] · [[davide-decisions]]
 - [[other]] · [[workspace-index]]
 
@@ -33,5 +33,6 @@ This is the MedWave manager brain for Master Control. Answer from a rule or from
 - `brain assign "task"`
 - `brain report`
 - `brain ingest`
+- `/workspace/team/outreach-control/ask_brain.sh "question"` — objection notes only, then qwen2.5:3b
 
 Local first, tokens last.

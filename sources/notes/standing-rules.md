@@ -105,7 +105,7 @@ Here are 6 short bullet points summarizing the most important durable points fro
   _source: memory:profile_
 - As of 1 Nov 2026 (Davide, in Legal bot's chat): "SAHPRA" never appears in MedWave ads (fine in brochures, documents and the website). MedWave has an exclusive SA agreement with Hypervibe, so the Hypervibe and G17 logos stay on vibration-plate photos with the MedWave logo alongside.  
   _source: memory:profile_
-- SA prices (ZAR, excluding VAT): Neuro-100S Mobile R100k, Neuro-100S flagship R190k, WBV R175k, panel plus WBV package R295k, Business Package R345k. US prices (16 Oct): $15k standard, install +$1k, demo $10k. US booths: $35k single, $59k dual. Total marketing spend across all channels must stay under US$800 a day. The R2,500 referral is for SA employees only; there's no approved customer referral offer.  
+- SUPERSEDED 12 Nov 2026 10:21 SAST for lead-facing quoting of full equipment prices (R100k / R190k and any list price). Those figures must not be sent to leads. Use only the monthly amounts in [[monthly-prices-only]] / [[patient-price]], and never quote any price to a CPD-list doctor who has not attended a MedWave online event. Historical list (kept for internal record, not for lead copy): SA prices (ZAR, excluding VAT): Neuro-100S Mobile R100k, Neuro-100S flagship R190k, WBV R175k, panel plus WBV package R295k, Business Package R345k. US prices (16 Oct): $15k standard, install +$1k, demo $10k. US booths: $35k single, $59k dual. Total marketing spend across all channels must stay under US$800 a day. The R2,500 referral is for SA employees only; there's no approved customer referral offer.  
   _source: memory:profile_
 - Only Meta/Facebook ad accounts and emails that explicitly mention "MedWave" are MedWave business. Others come from an old, unrelated ad account Davide is still logged into and should be ignored.  
   _source: memory:shared_profile via Master Control_
@@ -1372,3 +1372,45 @@ Here are 6 short bullet points summarizing the most important durable points fro
   _source: transcript:Grok Bot#pos19 (assistant)_
 - Bot here, confirmed. I have no routines, so nothing needed changing, and nothing currently goes to Davide on a schedule. Today's work: I connected the MedWave Payments Ledger (read-only API) and tested it. It returned 148 paid appointments (130 deposits, 18 full payments, about R7.27m in total), an  
   _source: transcript:Grok Bot#pos15 (assistant)_
+
+### 2026-11-09 (STANDING, Davide t259u/t260u, 20:47 SAST, in Outreach Control's own chat)
+
+- **GIVE, GIVE, GIVE, TAKE is the default for ALL lead outreach.** Davide's words: "I want us to create value 3 times before we ask for an appointment... always use this high value approach to reaching out to leads", then "keeping the wording in the messages minimalistic and valuable".
+  - Give at least 3 separate high-value touches before any call or appointment ask. Examples: the brochure, a practitioner story, the contraindications video, the FAQs page, or a short insight relevant to their practice.
+  - Each touch is short and minimal, gives one new thing, and ends on an open question about them, not about a call.
+  - The 4th touch onward may ask for the call or walkthrough.
+  - Exception: if the lead asks for a call or meeting themselves, book it at once (after the no-double-book check).
+  - This builds on the 1 Nov GGGT standard ("every person should have a high value piece of content given to them three times before we even ask"). Give Give Give Take bot holds the full method.
+  - _source: Davide, Outreach Control chat t259u/t260u, 9 Nov 2026_
+
+## 2026-11-10 Outreach window (Davide t270u, 06:12 SAST)
+- The outreach window is 06:00 to 22:00 SAST every day, weekends included. This replaces 07:00-20:00 and the old no-follow-ups 22:00-07:00 rule (now no sends 22:00-06:00). The after-hours out-of-office note applies only from 22:00 to 06:00.
+- After-hours note (22:00-06:00): skip any lead whose last inbound or outbound message was within the past 15 minutes, because Master Control's live watcher is replying to them (MC, 10 Nov 06:14). None of my routines send an after-hours note right now.
+- Setter Slack learning notes go to every HighLevel owner (Hazel, Michael, Erich, Andries and the others). "Elmien Slack only" means Elmien gets nudges on Slack and never on WhatsApp. It does NOT mean only Elmien gets Slack. Booked checks must cover ALL HighLevel calendars, not just the primary one (10 Nov).
+
+## 2026-11-10 After-hours replies (Davide t272u/t273u, 07:43-07:44 SAST)
+- Out-of-office hours for new inbound leads are 17:00 to 08:00 SAST. Reply at once with plain text only: no images, links, attachments or brochure until the lead replies, so it does not land in spam. The email must still look professional.
+- Wording: "Hey {first_name}, it's Davide Duranti, the CEO of MedWave. You've come in a little bit after hours now but I'm personally handling your email/enquiry. Can I send you a brochure in the meantime?"
+- Alternative Davide wording: "It's out of office hours at the moment. However someone will call you tomorrow. In the meantime can I get you a brochure or something useful that you can start taking a look through?"
+- When the lead replies, send the brochure: Neuro for medical leads, Optimum for aesthetics. The owner is alerted at 08:00 to follow up.
+
+### 2026-11-12
+
+- "Already a MedWave or another provider in my area" is an objection to handle, not a disqualifier. Never close, set DND or move to no-contact for that reason. Many restaurants can share one area. Demand often outstrips a single provider, so MedWave needs to expand. In lead copy do not use the internal "hundreds of thousands" figure; say "many people in the area need this kind of treatment."
+  _source: Davide Duranti, 12 Nov 2026 06:21 SAST, Outreach Control chat t330u_
+- A cancellation is never a price decline. Do not send the patient price line or the providers link, and do not set DND, just because a lead cancelled a slot or mentioned a nearby provider.
+  _source: Davide Duranti and Outreach Control, 12 Nov 2026, after the Chanelle Kemp watcher error_
+- Objection-handling knowledge belongs in the Obsidian brain and should be pulled by the local Ollama model, so agents do not load large playbook context windows.
+  _source: Davide Duranti, 12 Nov 2026, Outreach Control chat t332u_
+- The two practitioner / B2B "already a provider nearby" replies are approved. The patient reply is not approved. Patient leads with this objection go notify-only to their owner. Do not send them a reply.
+  _source: Davide Duranti, 12 Nov 2026 06:25 SAST_
+- SUPERSEDED 12 Nov 2026 10:21 SAST: do not quote full equipment prices (R100,000, R190,000, R100k, R190k or any list price) in lead-facing copy. The 11 Nov patient price line that used those figures is withdrawn. For everyone who may be quoted a price, use only monthly amounts, excluding VAT, with no deposit: Neuro Mobile + stand about R2,174 a month; Optimum panel + stand about R3,805 a month; Neuro 100-S panel + stand about R4,131 a month; Recovery Booth about R5,436 a month; Booth + Vibe package about R8,153 a month. Do not mention interest rate, term length or other finance terms in lead-facing wording. The replacement patient price line (PENDING Davide's wording confirmation) is: "Thanks for your interest. Our home-use Neuro-100S Mobile works out to about R2,174 a month and our flagship medical Neuro-100S about R4,131 a month, both excluding VAT, with no deposit. Does that fit within your budget? If so, I'd be happy to set up a quick call."
+  _source: Davide Duranti, 12 Nov 2026 10:21 SAST, relayed by Master Control_
+- Doctors on any CPD list get no pricing of any kind (no price line, no monthly figures, no finance amounts) until they have attended a MedWave online event. It is CPD, not CBD. They are identified by HighLevel tags containing "cpd" (case-insensitive). Until attendance is confirmed (tag `cpd - attended`), only an event invite or a discovery call. Exact CPD tags found on 12 Nov in the SA location: `cpd opt-in`, `cpd - attended`, `cpd - not attended`, `cpd - 10 nov`, `cpd - web invite`, `cpd - davide sent`, `cpd - intro - msg1`, `cpd - intro - msg2`, `cpd - intro - msg3`. This is a hold rule, not an opt-out; do not add them to the suppression list for having a CPD tag.
+  _source: Davide Duranti, 12 Nov 2026 10:21 SAST, relayed by Master Control_
+- Before any blast or reactivation send, skip anyone who received any message from MedWave (bot, BDR or closer, any channel) in the last 24 hours, checked against HighLevel conversation history, not only our logs. The daily quiet-lead batch is treated as reactivation, so the 24-hour skip applies to it. The existing 48-hour skip for reactivation stays and is stricter. Do not apply the 24-hour skip to the 1-hour re-touch of brand-new unreplied leads. That cadence stays on: at most 3 automated touches a day, each adding something new, stopping on reply, booking, opt-out or owner pickup.
+  _source: Davide Duranti, 12 Nov 2026 10:21 SAST, corrected 10:22 SAST, relayed by Master Control_
+- Never send a contact the same or near-identical wording twice. Compare the proposed text against their past outbound messages in HighLevel. This applies to every send, including 1-hour re-touches.
+  _source: Davide Duranti, 12 Nov 2026 10:21–10:22 SAST, relayed by Master Control_
+- Sequence membership (N1, B1–B5) is shown only by the sequence tag on each HighLevel contact. Detect it from the tags only. Exact sequence tag names found on 12 Nov in the SA location: `n1`, `n1 - b5`, `b1`, `b1 - b5`, `b2`, `b3`, `b4`, `b5`. If contacted in the last 24 hours, pause sequence messaging. If they reply, book immediately. `wa-react-1112-b1` is a reactivation batch tag, not an N1/B1–B5 sequence tag.
+  _source: Davide Duranti, 12 Nov 2026 10:25 SAST, relayed by Master Control_
