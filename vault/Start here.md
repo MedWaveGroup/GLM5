@@ -25,6 +25,7 @@ This is the MedWave manager brain for Master Control. Answer from a rule or from
 - [[products-positioning]] · [[channels]] · [[bots]] · [[davide-decisions]]
 - [[other]] · [[workspace-index]]
 - [[Business Intelligence Suite/Home|Business Intelligence Suite]] — CPD audience dashboard, pipeline, follow-up priorities and the CPD no-pricing rule
+- [[Smartbot/Smartbot|Smartbot]] — continuous-improvement findings (Improvement Log, research, Meta ads watchlist, fleet/blockage, CEO input history). Paused since 6 Nov 2026 19:11 SAST
 
 ## Commands
 

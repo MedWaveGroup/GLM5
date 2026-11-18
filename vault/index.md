@@ -26,6 +26,7 @@ Built from the 9 Nov 2026 export. Facts stay dated and sourced. Start at [[Start
 - [[decisions]] (9 items)
 - [[decision-model]] — how Davide decides, plus the HQ rubric
 - [[Start here]]
+- [[Smartbot/Smartbot|Smartbot]] — continuous-improvement hub (paused since 6 Nov 2026)
 
 ## How to use
 
@@ -43,6 +44,13 @@ Built from the 9 Nov 2026 export. Facts stay dated and sourced. Start at [[Start
 - [[Business Intelligence Suite/How to Refresh]]
 - [[Business Intelligence Suite/Pipeline & Conversion]]
 - [[Business Intelligence Suite/Rules - CPD Pricing]]
+- [[Smartbot/CEO input history]]
+- [[Smartbot/Fleet and blockage findings]]
+- [[Smartbot/Improvement Log]]
+- [[Smartbot/Meta ads compliance watchlist]]
+- [[Smartbot/Research and competitor learnings]]
+- [[Smartbot/Smartbot]]
+- [[Smartbot/Source index]]
 - [[Start here]]
 - [[booking-and-calendars/booking-and-calendars-2026-11-01]]
 - [[booking-and-calendars/booking-and-calendars-2026-11-02]]
