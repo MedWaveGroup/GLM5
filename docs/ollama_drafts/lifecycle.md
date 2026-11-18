@@ -1,0 +1,25 @@
+- Focus on lead lifecycle from intake to booking.
+- Send 22 WhatsApp follow-ups to leads.
+- Track all outreach in HighLevel, marked as Davide.
+- Handle opt-out contacts by ignoring for now, plan protocol from Sterrenberg.
+- Use a 3-step GGGT WhatsApp sequence named "Davide-Grok".
+- Lift hold on community/provider list, no bulk messaging those providers.
+- Salespeople book demos on calls.
+- Plan 2 in-person events and 2 webinars/month, 20 total, 5 per setter.
+- Send legal one-consent and full bulk texts to past calls and event leads.
+- US pricing: US$15,000 standard, US$1,000 for white-glove install, US$10,000 for demo unit, returns not part of business model.
+- BDRs: Erich, Eddie, Hazel, Michael Steytler (under Francois), Sterrenberg owns automations and reactivation.
+- Lead messages may offer a demo.
+- Earlier approvals (1 Nov, kept) with specific health claims and legal rules.
+- Outreach activities scheduled from 10:30 to 19:04 on 1 Nov.
+- Master Control directive: "nothing should stop the engine room."
+- Opted-out contacts stay in HighLevel with DND and 'Opted out' tag, never deleted or messaged.
+- Company priority: Fix the engine room (marketing → appointments → sales → operations) before anything else.
+- Define high-quality appointments as any booking in sales calendars except low-quality webinars.
+- Double-check US lead flow and consider using the 8-ebook set as a lead magnet.
+- Pause ads over list consent and use buyer branding in private proposals.
+- Create necessary bots and refer to Karin Duranti for referrals.
+- Propose LinkedIn check times at 09:00, 12:00, and 15:30 SAST.
+- Check and chase unanswered leads after 1 hour, repeating until confirmed.
+- Track email replies hourly and report to Master Control.
+- Use buyer branding in marketing consent and allow bulk WhatsApp

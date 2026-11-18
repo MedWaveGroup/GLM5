@@ -15,7 +15,7 @@ Part of [[products-positioning]]. Index: [[index]]. Start: [[Start here]].
   _source: MEDWAVE_CONTEXT_MASTER.md › 2. People_
 - Francois coordinated the Technogym demo booth install at Costa Kapnius's office (V&A Waterfront).  
   _source: MEDWAVE_CONTEXT_MASTER.md › 2. People_
-- Neuro-100S Mobile R100,000: 432 LEDs (288 at 635 nm, 144 at 810 nm), 920×420×65 mm.  
+- SUPERSEDED 12 Nov 2026 10:21 SAST for lead-facing quotes of the full price (internal spec only). Neuro-100S Mobile R100,000: 432 LEDs (288 at 635 nm, 144 at 810 nm), 920×420×65 mm.  
   _source: MEDWAVE_CONTEXT_MASTER.md › 3. Products and SA prices (ZAR, excl. VAT, 8 Oct)_
 - Neuro-100S flagship R190,000: 585 LEDs (448 at 635 nm, 137 at 810 nm), 929×377×60 mm.  
   _source: MEDWAVE_CONTEXT_MASTER.md › 3. Products and SA prices (ZAR, excl. VAT, 8 Oct)_

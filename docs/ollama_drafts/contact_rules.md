@@ -1,0 +1,16 @@
+- Focus: contact and send rules.
+- Source: Messaging Performance report 4 Nov 2026.
+- No machine-readable send config exists in outreach-bot, outreach-control or context-bot.
+- Main SA bulk batch: start 09:00, finish by 10:59 SAST, Mon-Fri.
+- Avoid 17h for bulk (3.4% worst hour: 2.4% reply on 6,410 delivered, 14d).
+- Secondary slots if needed: 12h, 18h.
+- Someone with HighLevel UI access must move the workflow/bulk schedule from 08:00 to 09:00-10:59.
+- Check outreach-bot/suppression_list.csv before every send.
+- Anyone who said "not interested" gets no automated messages afterwards (permanent).
+- 7+ automated outbound messages in 7 days -> 7-day cool-off, then review (current group: review 2026-11-12).
+- No ask (call, booking or meeting) before the 4th touch. Touches 1-3 are gives only.
+- Never end a text with a name or title sign-off (no "Davide", "- Dr X, CMO", "MedWave team").
+- End every text on an open question.
+- PAUSED templates: t_c56afa7197, t_a8b8d4dea3, t_bf8df0239b, t_f79d7acf7e, t_954dab4197, t_a3343254af.
+- PREFERRED templates: t_0da63e5468, t_d6527f9ea2, t_19a8d7a1a6, t_f65b1071d9, t_5f6c330abd, t_63c4ac804d, t_1cdb298f44.
+- Staff follow-up nudges go on Slack only, never WhatsApp.

@@ -1,0 +1,7 @@
+- **Routing order: deterministic rule or lookup first**
+- **Local Ollama model next, with hosts in brain.toml**
+- **Paid model escalation last, with human flag for higher costs**
+- **Headroom's compress() before local generation**
+- **Loopback only, refusing non-127.0.0.1 addresses**
+- **No proxy started, no off-machine transmission**
+- **CLI sends unshrunk text if import fails from Headroom**

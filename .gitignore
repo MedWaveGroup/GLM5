@@ -7,3 +7,7 @@ venv/
 .brain-cache/
 dist/
 build/
+
+# BI Suite: contact details never enter the repo
+**/confidential/
+*.xlsx
