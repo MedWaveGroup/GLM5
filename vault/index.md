@@ -14,27 +14,35 @@ Built from the 9 Nov 2026 export. Facts stay dated and sourced. Start at [[Start
 - [[booking-and-calendars]] (283 items)
 - [[bots]] (31 items)
 - [[channels]] (690 items)
-- [[davide-decisions]] (622 items)
-- [[lead-handling]] (704 items)
+- [[davide-decisions]] (623 items)
+- [[lead-handling]] (705 items)
 - [[other]] (139 items)
-- [[products-positioning]] (582 items)
-- [[standing-rules]] (680 items)
+- [[products-positioning]] (583 items)
+- [[standing-rules]] (681 items)
 - [[targets-kpis]] (148 items)
 - [[team]] (577 items)
 - [[workspace-index]] (workspace files)
-- [[objections]] (17 items)
+- [[objections]] (18 items)
+- [[decisions]] (9 items)
 - [[decision-model]] — how Davide decides, plus the HQ rubric
 - [[Start here]]
 
 ## How to use
 
-- Rulings with dates: [[davide-decisions]]. Hard rules: [[standing-rules]]. Objection cards: [[objections]].
-- Booking a lead: [[booking-and-calendars]], then the HQ rubric in [[decision-model]].
+- Rulings with dates: [[davide-decisions]]. Hard rules: [[standing-rules]]. Objection cards: [[objections]]. Watcher if/then cards: [[decisions]] and [[watcher-decision-rules]].
+- Booking a lead: [[booking-and-calendars]], then the HQ rubric in [[decision-model]]. Confirmed times: [[book-confirmed-times]].
 - Who is who: [[team]] and [[bots]].
 - Each fact carries a `_source_` line. Transcript snippets are undated search excerpts.
 
 ## All notes
 
+- [[Business Intelligence Suite/CPD Attendees Dashboard]]
+- [[Business Intelligence Suite/Data Dictionary]]
+- [[Business Intelligence Suite/Follow-up Priorities]]
+- [[Business Intelligence Suite/Home]]
+- [[Business Intelligence Suite/How to Refresh]]
+- [[Business Intelligence Suite/Pipeline & Conversion]]
+- [[Business Intelligence Suite/Rules - CPD Pricing]]
 - [[Start here]]
 - [[booking-and-calendars/booking-and-calendars-2026-11-01]]
 - [[booking-and-calendars/booking-and-calendars-2026-11-02]]
@@ -113,6 +121,16 @@ Built from the 9 Nov 2026 export. Facts stay dated and sourced. Start at [[Start
 - [[davide-decisions/davide-decisions-undated-part-8]]
 - [[davide-decisions]]
 - [[decision-model]]
+- [[decisions/andries-calendar-blackout]]
+- [[decisions/book-confirmed-times]]
+- [[decisions/bot-pickup-owner]]
+- [[decisions/channel-coverage]]
+- [[decisions/ownership-precedence]]
+- [[decisions/post-reply-follow-ups]]
+- [[decisions/sequence-replies]]
+- [[decisions/short-separate-texts]]
+- [[decisions/watcher-decision-rules]]
+- [[decisions]]
 - [[lead-handling/lead-handling-2026-11-01]]
 - [[lead-handling/lead-handling-2026-11-02]]
 - [[lead-handling/lead-handling-2026-11-03]]
@@ -133,6 +151,7 @@ Built from the 9 Nov 2026 export. Facts stay dated and sourced. Start at [[Start
 - [[lead-handling/lead-handling-undated-part-8]]
 - [[lead-handling]]
 - [[objections/already-a-provider-nearby]]
+- [[objections/barefoot-never-contact]]
 - [[objections/budget-too-expensive]]
 - [[objections/cancellation-is-not-a-price-decline]]
 - [[objections/cpd-no-pricing]]

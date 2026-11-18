@@ -32,7 +32,7 @@ A "Finance options" or "More info on Financing" tap is buying interest, not an o
 
 - 90 days, interest, 11%, 60 months, credit, instalments, payment plan, or "own it for"
 - Full equipment list prices (SUPERSEDED 12 Nov 2026 10:21 SAST). If a non-CPD lead may be quoted, use only the monthly amounts in [[monthly-prices-only]]
-- Any monthly or finance amount to a CPD-list doctor who has not attended a MedWave online event
+- Any monthly or finance amount to any CPD-tagged or CPD-list contact, including those with the tag `cpd - attended`
 - Any rental or deposit figure without Davide's approved number plus Ian's disclaimer
 - The no-money-down line to a patient
 

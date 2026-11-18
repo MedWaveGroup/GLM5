@@ -26,7 +26,7 @@ It looks like you have a series of entries detailing various aspects of a projec
 8. **Booth Baseline Image**: Supersedes booth-dimension conflict; proposals may show booth in prospect's branding.
 9. **Sales Statistics**: "Sold out 18 months in a row" is allowed as a past fact
 
-## Fact log (582 facts)
+## Fact log (583 facts)
 
 ## Products
 

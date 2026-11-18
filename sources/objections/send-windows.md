@@ -19,8 +19,9 @@ Davide, 12 Nov 2026 (10:21 clarification at 10:22, sequence tags at 10:25 SAST).
 
 ## 1-hour re-touch for brand-new unreplied leads
 
-- The 1-hour re-touch cadence stays on for brand-new leads who have not replied.
-- At most 3 automated touches a day.
+- The 1-hour re-touch cadence stays on for brand-new leads who have not replied, except as below.
+- New leads already tagged with an N1 or B1–B5 sequence tag (`n1`, `n1 - b5`, `b1`, `b1 - b5`, `b2`, `b3`, `b4`, `b5`) get no one-hour re-touch. (Davide, 12 Nov 2026 10:42 SAST.)
+- For all other new leads: at most 3 automated touches a day.
 - Each touch must add something new.
 - Stop on reply, booking, opt-out, or owner pickup.
 - The 24-hour any-communication skip does not apply to this cadence.
@@ -37,6 +38,7 @@ Davide, 12 Nov 2026 (10:21 clarification at 10:22, sequence tags at 10:25 SAST).
 - Exact sequence tag names found in HighLevel (SA location, 12 Nov 2026): `n1`, `n1 - b5`, `b1`, `b1 - b5`, `b2`, `b3`, `b4`, `b5`.
 - If a contact has one of those tags and was contacted in the last 24 hours, pause sequence messaging.
 - If they reply, book immediately (discovery call rules).
+- New leads already carrying one of these tags get no one-hour re-touch.
 - `wa-react-1112-b1` is a 12 Nov reactivation batch tag, not an N1/B1–B5 sequence tag.
 
 ## Source and date

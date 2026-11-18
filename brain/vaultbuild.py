@@ -46,6 +46,45 @@ _PEOPLE = [
 
 
 
+def _install_decisions(out_dir: Path, notes_dir: Path) -> int:
+    """Copy sources/decisions watcher rule cards and a short MOC into the vault."""
+    src_dir = Path(notes_dir).parent / "decisions"
+    count = 0
+    if not src_dir.is_dir():
+        return count
+    dest = Path(out_dir) / "decisions"
+    dest.mkdir(parents=True, exist_ok=True)
+    links = []
+    for path in sorted(src_dir.glob("*.md")):
+        text = redact(path.read_text(encoding="utf-8", errors="replace"))
+        _write(dest / path.name, text)
+        count += 1
+        if path.stem != "watcher-decision-rules":
+            links.append(path.stem)
+    moc = "\n".join([
+        "---",
+        'title: "Watcher decision rules"',
+        "tags: [medwave, brain, decisions, moc]",
+        'source: "sources/decisions; Davide Duranti 12-13 Nov 2026"',
+        "date: 2026-11-13",
+        "---",
+        "",
+        "# Watcher decision rules",
+        "",
+        "Atomic if/then cards the lead watcher applies directly, without asking Davide. Start at [[watcher-decision-rules]].",
+        "",
+        "## Cards",
+        "",
+        "- [[watcher-decision-rules|Index of if/then rules, plus never-override hard stops]]",
+    ] + [f"- [[{slug}]]" for slug in links] + [
+        "",
+        "Related: [[standing-rules]] · [[davide-decisions]] · [[objections]] · [[booking-and-calendars]] · [[index]] · [[Start here]]",
+        "",
+    ])
+    _write(Path(out_dir) / "decisions.md", moc)
+    return count
+
+
 def _install_objections(out_dir: Path, notes_dir: Path) -> int:
     """Copy sources/objections cards and the objections MOC into the vault."""
     src_dir = Path(notes_dir).parent / "objections"
@@ -113,6 +152,9 @@ def compile_vault(notes_dir: Path, decision_model: Path, out_dir: Path) -> dict:
     obj_count = _install_objections(out_dir, notes_dir)
     if obj_count:
         topic_counts["objections"] = obj_count
+    dec_count = _install_decisions(out_dir, notes_dir)
+    if dec_count:
+        topic_counts["decisions"] = dec_count
     _write(out_dir / "Start here.md", _start_here(rule_links, people_links, product_links))
     _write(out_dir / "index.md", _index(out_dir, topic_counts))
     problems = _scan(out_dir)
@@ -127,9 +169,15 @@ def compile_vault(notes_dir: Path, decision_model: Path, out_dir: Path) -> dict:
     }
 
 
+# Hand-built or separately refreshed folders that a vault compile must not delete.
+# "Business Intelligence Suite" is rebuilt by /workspace/bi-suite/scripts/refresh_bi_suite.py (12 Nov 2026).
+# "Sales Playbook" is hand-built from /workspace/objections (13 Nov 2026); learning-log.md gets watcher outcomes appended.
+PRESERVE_DIRS = {".obsidian", "Business Intelligence Suite", "Sales Playbook"}
+
+
 def _reset(out_dir: Path) -> None:
     for child in list(out_dir.iterdir()):
-        if child.name == ".obsidian":
+        if child.name in PRESERVE_DIRS:
             continue
         if child.is_dir():
             shutil.rmtree(child)
@@ -542,9 +590,10 @@ def _start_here(rules: list[str], people: list[str], products: list[str]) -> str
         "- [[decision-model]] — how Davide decides, and the HQ rubric",
         "- [[standing-rules]] — rule cards and the fact log",
         "- [[team]] — one note per person",
-        "- [[lead-handling]] · [[objections]] · [[booking-and-calendars]] · [[targets-kpis]]",
+        "- [[lead-handling]] · [[objections]] · [[decisions]] · [[booking-and-calendars]] · [[targets-kpis]]",
         "- [[products-positioning]] · [[channels]] · [[bots]] · [[davide-decisions]]",
         "- [[other]] · [[workspace-index]]",
+        "- [[Business Intelligence Suite/Home|Business Intelligence Suite]] — CPD audience dashboard, pipeline, follow-up priorities and the CPD no-pricing rule",
         "",
         "## Commands",
         "",
@@ -554,7 +603,7 @@ def _start_here(rules: list[str], people: list[str], products: list[str]) -> str
         "- `brain assign \"task\"`",
         "- `brain report`",
         "- `brain ingest`",
-        "- `/workspace/team/outreach-control/ask_brain.sh \"question\"` — objection notes only, then qwen2.5:3b",
+        "- `/workspace/team/outreach-control/ask_brain.sh \"question\"` — objection notes, standing rules and watcher decision cards, then qwen2.5:3b",
         "",
         "Local first, tokens last.",
         "",
@@ -586,8 +635,8 @@ def _index(out_dir: Path, topic_counts: dict[str, int]) -> str:
         "",
         "## How to use",
         "",
-        "- Rulings with dates: [[davide-decisions]]. Hard rules: [[standing-rules]]. Objection cards: [[objections]].",
-        "- Booking a lead: [[booking-and-calendars]], then the HQ rubric in [[decision-model]].",
+        "- Rulings with dates: [[davide-decisions]]. Hard rules: [[standing-rules]]. Objection cards: [[objections]]. Watcher if/then cards: [[decisions]] and [[watcher-decision-rules]].",
+        "- Booking a lead: [[booking-and-calendars]], then the HQ rubric in [[decision-model]]. Confirmed times: [[book-confirmed-times]].",
         "- Who is who: [[team]] and [[bots]].",
         "- Each fact carries a `_source_` line. Transcript snippets are undated search excerpts.",
         "",

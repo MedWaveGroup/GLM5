@@ -39,9 +39,9 @@ B2B first reply: "Totally understand, it's a real investment. We don't sell a bo
 ## Do not say
 
 - Any full equipment list price (R100,000, R190,000 and similar are SUPERSEDED 12 Nov 2026 10:21 SAST). See [[monthly-prices-only]].
-- Monthly or finance amounts to a CPD-list doctor who has not attended a MedWave online event (see [[cpd-no-pricing]])
+- Monthly or finance amounts to any CPD-tagged or CPD-list contact, including those with the tag `cpd - attended` (see [[cpd-no-pricing]])
 - Any price, deposit, rental amount or earnings figure to a B2B lead who should be booked on a call instead of quoted in writing
-- The patient price line to a practitioner, or to a CPD-list doctor under the no-pricing hold
+- The patient price line to a practitioner, or to any CPD-tagged or CPD-list contact (the tag `cpd - attended` is not an exemption)
 - Full package marketing claims that are still on HOLD
 - Try-before-you-buy (on HOLD)
 

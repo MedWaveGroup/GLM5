@@ -7,7 +7,7 @@ date: 2026-11-12
 
 # Patient price line, confirmed patients only
 
-The patient price line is only for confirmed patients, never for doctors, physios, clinics, gym owners or other practitioners, and never for anyone whose HighLevel tags contain "cpd" (case-insensitive) until they have attended a MedWave online event. If a confirmed patient says it is too expensive, share the local-provider link, then move them to no-contact and set DND.
+The patient price line is only for confirmed patients, never for doctors, physios, clinics, gym owners or other practitioners, and never for anyone whose HighLevel tags contain "cpd" (case-insensitive) or who is on the CPD list file. The tag `cpd - attended` does not lift this hold. If a confirmed patient says it is too expensive, share the local-provider link, then move them to no-contact and set DND.
 
 ## Trigger phrases
 
@@ -18,7 +18,7 @@ The patient price line is only for confirmed patients, never for doctors, physio
 
 ## Rule
 
-- Use this line only after the lead is a confirmed end-patient, not a practitioner or a false-positive consumer flag, and not a CPD-list doctor.
+- Use this line only after the lead is a confirmed end-patient, not a practitioner or a false-positive consumer flag, and not a CPD-tagged or CPD-list contact (the tag `cpd - attended` is not an exemption).
 - Never quote full equipment prices (R100,000, R190,000 or any list price). Use only the monthly amounts below.
 - Do not mention an interest rate, a term length, or other finance terms in lead-facing wording. "No deposit" and "excluding VAT" and "a month" are allowed in this line.
 - Skip if they are booked, opted out, on DND or the suppression list, or if a human owner is already in the thread.
@@ -40,7 +40,7 @@ The patient price line is only for confirmed patients, never for doctors, physio
 ## Do not say
 
 - This price line to a B2B or healthcare-provider lead
-- This price line to a doctor on any CPD list (any HighLevel tag containing "cpd") until they have attended a MedWave online event. For them, only an event invite or a discovery call. See [[cpd-no-pricing]].
+- This price line to a doctor on any CPD list (any HighLevel tag containing "cpd") . The tag `cpd - attended` does not lift this hold. For them, only an event invite or a discovery call. See [[cpd-no-pricing]].
 - Any full equipment price
 - Interest rate, 60 months, instalments, payment-plan terms, or other finance terms
 - Finance, no-money-down, earnings or legal wording in the same message

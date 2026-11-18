@@ -22,7 +22,7 @@ Here are 6 short bullet points summarizing the most important durable points fro
 - **Marketing Content**: Marketing content must be B2B only, not consumer-facing, and avoid showing the device beating people-in-treatment shots.
 - **WhatsApp Usage**: WhatsApp messaging and templates are for South Africa only; US outreach uses SMS/iMessage through the US HighLevel account.
 
-## Fact log (680 facts)
+## Fact log (681 facts)
 
 ## Rule cards
 

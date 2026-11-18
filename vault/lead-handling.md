@@ -28,7 +28,7 @@ Based on the information provided, here's a summary of the key points and action
 10. **BDRs**: BDRs (under Francois): Erich, Eddie, Hazel, and Michael Steytler. Sterrenberg is not a BDR; he owns automations and reactivation.
 11. **Lead Messages**: Lead messages may offer a demo,
 
-## Fact log (704 facts)
+## Fact log (705 facts)
 
 ## Dated notes
 

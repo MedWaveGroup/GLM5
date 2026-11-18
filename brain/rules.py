@@ -53,13 +53,15 @@ RULES: tuple[Rule, ...] = (
             r"doctor.{0,40}(price|pricing|cost|monthly|finance)",
         ),
         ruling=(
-            "Doctors on any CPD list get no pricing of any kind until they have attended a "
-            "MedWave online event. Identify them by HighLevel tags containing 'cpd' "
-            "(case-insensitive; it is CPD, not CBD). No price line, no monthly figures, "
-            "no finance amounts. Only an event invite or a discovery call. Attendance is "
-            "confirmed by the tag 'cpd - attended'. This is a hold rule, not an opt-out."
+            "Hold pricing for every CPD-tagged contact, with no exemptions. Identify them "
+            "by HighLevel tags containing 'cpd' (case-insensitive; it is CPD, not CBD) or "
+            "by the list /workspace/team/outreach-control/cpd_contacts_2026-11-12.csv. "
+            "No price line, no monthly figures, no finance amounts. Only an event invite "
+            "or a discovery call. The tag 'cpd - attended' does not count as attending an "
+            "online event and does not lift the hold, until Davide names a real attendance "
+            "signal. This is a hold rule, not an opt-out."
         ),
-        citation="Davide Duranti, 12 Nov 2026 10:21 SAST, relayed by Master Control.",
+        citation="Davide Duranti, 12 Nov 2026 10:21 SAST, updated 10:42 SAST: no attendance exemption.",
     ),
     Rule(
         id="monthly-prices-only",
@@ -131,12 +133,15 @@ RULES: tuple[Rule, ...] = (
             r"brand[- ]new (unreplied )?lead",
         ),
         ruling=(
-            "The 1-hour re-touch cadence for brand-new leads who have not replied stays on. "
-            "At most 3 automated touches a day, each adding something new, stopping on "
-            "reply, booking, opt-out or owner pickup. The 24-hour any-communication skip "
-            "does not apply to this cadence. The never-repeat-wording check still does."
+            "The 1-hour re-touch cadence for brand-new leads who have not replied stays on, "
+            "except that new leads already tagged with an N1 or B1–B5 sequence tag "
+            "(n1, n1 - b5, b1, b1 - b5, b2, b3, b4, b5) get no one-hour re-touch. "
+            "For all other new leads: at most 3 automated touches a day, each adding something "
+            "new, stopping on reply, booking, opt-out or owner pickup. The 24-hour "
+            "any-communication skip does not apply to this cadence. The never-repeat-wording "
+            "check still does."
         ),
-        citation="Davide Duranti, 12 Nov 2026 10:22 SAST, relayed by Master Control.",
+        citation="Davide Duranti, 12 Nov 2026 10:22 SAST, updated 10:42 SAST: no re-touch for sequence-tagged new leads.",
     ),
     Rule(
         id="sequence-n1-b1-b5",
@@ -151,10 +156,11 @@ RULES: tuple[Rule, ...] = (
             "Sequence membership (N1, B1–B5) is shown only by the sequence tag on the "
             "HighLevel contact. Exact tag names: n1, n1 - b5, b1, b1 - b5, b2, b3, b4, b5. "
             "If the contact was messaged in the last 24 hours, pause sequence messaging. "
-            "If they reply, book immediately. wa-react-1112-b1 is a reactivation batch tag, "
+            "If they reply, book immediately. New leads already carrying one of these tags "
+            "get no one-hour re-touch. wa-react-1112-b1 is a reactivation batch tag, "
             "not a sequence tag."
         ),
-        citation="Davide Duranti, 12 Nov 2026 10:25 SAST, relayed by Master Control.",
+        citation="Davide Duranti, 12 Nov 2026 10:25 SAST, updated 10:42 SAST: no re-touch for sequence-tagged new leads.",
     ),
     Rule(
         id="no-sa-pricing-before-call",
@@ -166,7 +172,7 @@ RULES: tuple[Rule, ...] = (
             r"\bquote\b",
         ),
         ruling=(
-            "Do not quote full SA equipment prices in writing (R100,000, R190,000 and similar are SUPERSEDED 12 Nov 2026 10:21 SAST). CPD-list doctors get no pricing of any kind until they have attended a MedWave online event. For everyone else who may be quoted, use only the approved monthly amounts, excluding VAT, with no deposit, and never mention interest rate, term length or other terms. Confirmed patients use the pending monthly patient price line. Offer a discovery call when a figure should not be sent."
+            "Do not quote full SA equipment prices in writing (R100,000, R190,000 and similar are SUPERSEDED 12 Nov 2026 10:21 SAST). Hold pricing for every CPD-tagged contact, with no exemptions — the tag 'cpd - attended' does not lift the hold. For everyone else who may be quoted, use only the approved monthly amounts, excluding VAT, with no deposit, and never mention interest rate, term length or other terms. Confirmed patients use the pending monthly patient price line. Offer a discovery call when a figure should not be sent."
         ),
         citation="Davide rule updated 12 Nov 2026 10:21 SAST (monthly amounts only; CPD hold). Earlier: no SA pricing before a sales call, evidenced 5 Nov 2026.",
     ),
@@ -238,8 +244,14 @@ RULES: tuple[Rule, ...] = (
             r"never reassign",
             r"keep (their|the) owner",
         ),
-        ruling="A lead that already has an owner stays with that owner. Do not reassign them.",
-        citation="decision-model §2, Davide 6 Nov 2026.",
+        ruling=(
+            "A lead that already has an owner stays with that owner, except for Davide's "
+            "ownership precedence (13 Nov 2026 10:15 SAST): Davide always takes precedence "
+            "over anyone in the company. If Davide (or a bot acting for him) is talking to "
+            "the same person as another rep, move the lead to Davide without asking. "
+            "Hierarchy: Davide, then Elmien, then Andries. Apply this across duplicate contacts."
+        ),
+        citation="decision-model §2, Davide 6 Nov 2026; exception: Davide 13 Nov 2026 10:15 SAST (ownership precedence).",
     ),
     Rule(
         id="unowned-leads-erich",
